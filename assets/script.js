@@ -24,21 +24,6 @@ const arrowRight = document.querySelector(".arrow_right");
 let currentImageIndex = 0;
 const dotsContainer = document.querySelector(".dots");
 
-/*arrowLeft.addEventListener("click", (e) => {
-    currentImageIndex--;
-    if (currentImageIndex < 0) {
-        currentImageIndex = slides.length - 1;
-    }
-    updateBanner(currentImageIndex);
-});
-
-arrowRight.addEventListener("click", (e) => {
-    currentImageIndex++;
-    if (currentImageIndex >= slides.length) {
-        currentImageIndex = 0;
-    }
-    updateBanner(currentImageIndex);
-});*/
 
 function updateBanner(index) {
     document.querySelector(".banner-img").src = `./assets/images/slideshow/${slides[index].image}`;
